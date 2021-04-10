@@ -1,0 +1,16 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+<div clas="container">
+    <div class="row">
+    <h2> List of musical instruments:</h2>
+            {% for product in products %}
+                <div class="col-4" >
+                    {{product}}
+                </div>    
+            {% endfor %}
+            
+              </div>    
+</div>        
+{% endblock %} 
+

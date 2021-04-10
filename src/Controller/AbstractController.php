@@ -27,6 +27,8 @@ abstract class AbstractController
     public function __construct()
     {
         $loader = new FilesystemLoader(APP_VIEW_PATH);
+        //TwigEnvironment prend ensuite cet objet loader en paramètre, 
+        // et un tableau de configuration (cache, debug, etc.), à mettre optionnellement en second paramètre.
         $this->twig = new Environment(
             $loader,
             [
