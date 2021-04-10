@@ -20,13 +20,6 @@ class HomeController extends AbstractController
      * @throws \Twig\Error\SyntaxError
      */
 
-     // Enfin, pour afficher un fichier de vue, tu utiliseras la méthode render de Twig,
-     //qui prend en paramètre le nom du fichier de vue (qui doit se trouver dans le répertoire configuré dans le loader).
-     // En second paramètre, tu passeras à la méthode render un tableau contenant toutes
-     // les variables que tu souhaites afficher dynamiquement dans ta vue.
-
-
-
     public function index()
     {
 
